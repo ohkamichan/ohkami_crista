@@ -46,42 +46,6 @@ a.site-title {
   display: none;
 }
 
-/*----------------全画面メニュー-------------*/
-/* .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  background-color: #1B1310;
-  background-size: cover;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .5s;
-}
-
-.sp-menu {
-  display: block;
-  padding-top: 212px;
-}
-
-.sp-menu a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  padding-bottom: 50px;
-} */
-
-
-
-
-
-
-
-
-
 
 /*----------------ファーストビュー-------------*/
 .fv {
@@ -175,6 +139,10 @@ a.site-title {
   
 }
 
+.news-image {
+  height: 200px;
+}
+
 .news-text p{
   max-width: 254px;
   font-weight: normal;
@@ -247,12 +215,7 @@ footer p {
   }
 }
 
-@media screen and (max-width:768px) {
-
-  /*--------------ヘッダー----------*/
-  /* .header-nav {
-    display: none;
-  } */
+@media screen and (max-width:979px) {
   
   /*--------------ハンバーガーメニュー----------*/
   .burger-btn {
@@ -360,6 +323,10 @@ footer p {
     margin: 0 auto;
   }
 
+  .box.about {
+    max-width: 83.3333%;
+  }
+
 
   /*---------------About----------*/
   .section-title p {
@@ -394,8 +361,8 @@ footer p {
 
 
   /*-------------お問い合わせ--------*/
-  .contact {
-    max-width:345px ;
+  .box.contact {
+    max-width: 83.333%;
   }
 }
 
@@ -403,4 +370,11 @@ footer p {
   .header-container {
     max-width: 345px;
   }
+  .box.about {
+    max-width: 345px;
+  }
+  .box.contact {
+    max-width: 345px;
+  }
+
 }
