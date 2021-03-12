@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+body {
+  color: #000;
+  font-family: Roboto, 'Noto Sans CJK JP', sans-serif;
+}
+
+/*----------------ヘッダー-------------*/
+
+header {
+  height: 75px;
+  border-bottom: 1px solid #fff;
+  background-color: #1B1310;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.site-title {
+  font-size: 26px;
+  color: #fff;
+  line-height: 75px;
+  text-decoration:none;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin-right:40px;
+}
+
+.nav-list,a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 75px;
+}
+
+.burger-btn {
+  display: none;
+}
+
+/*----------------全画面メニュー-------------*/
+/* .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #1B1310;
+  background-size: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .5s;
+}
+
+.sp-menu {
+  display: block;
+  padding-top: 212px;
+}
+
+.sp-menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 50px;
+} */
+
+
+
+
+
+
+
+
+
+
+/*----------------ファーストビュー-------------*/
+.fv {
+  height: 740px;
+  background-image: url(../img/fv-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fv h1 {
+  width: 500px;
+  font-size: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 35px 0;
+}
+
+
+/*----------------コンテナ----------*/
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 100px 0 50px;
+}
+
+/*----------------About-------------*/
+.section-title p {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.main-title p{
+  font-size: 24px;
+  line-height: 2em;
+  margin-bottom: 40px;
+}
+
+.explain p {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+/*----------------Service-------------*/
+.service-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-image {
+  max-width: 480px;
+}
+
+.service-image img {
+  width: 100%;
+}
+
+.service-text {
+  max-width: 480px;
+}
+
+.second {
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+/*----------------News-----------*/
+.news-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-wrap a {
+  text-decoration: none;
+  color: #000;
+}
+
+.news-contents {
+  max-width: 320px;
+  height: 323px;
+  box-shadow: 0px 0px 6px rgba(27, 19, 16, 0.4);
+  
+}
+
+.news-text p{
+  max-width: 254px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  padding: 20px 32px;
+}
+
+
+/*---------------Contact----------*/
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact .section-title p{
+  font-size: 24px;
+}
+
+label {
+  font-weight: normal !important;
+}
+
+input {
+  display: block;
+  margin: 5px 0 25px;
+  width: 100%;
+  padding:0 0 15px 0;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding:0 0 138px 0;
+}
+
+button {
+  display: block;
+  margin: 50px auto 0;
+  width: 235px;
+  color: #fff;
+  font-size:20px ;
+  font-weight: bold;
+  background-color: #000;
+  border-radius: 50px;
+  padding: 15px 0;
+}
+
+
+/*---------------フッター----------*/
+footer {
+  background-color: #000;
+  height: 75px;
+}
+
+footer p {
+  font-size:14px ;
+  line-height: 75px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media screen and (max-width : 1200px) {
+  .header-container {
+    max-width: 83.333%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  /*--------------ヘッダー----------*/
+  /* .header-nav {
+    display: none;
+  } */
+  
+  /*--------------ハンバーガーメニュー----------*/
+  .burger-btn {
+    padding:0;
+    display: block;
+    border: none;
+    border-radius: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #1B1310;
+    border-radius: 50%;
+    outline-style: none;
+    z-index: 3;
+    cursor: pointer;
+    margin: 25px 0 !important;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    z-index: 10;
+  }
+  
+  .bar_top {
+    transform: translateY(-6px);
+  }
+  
+  .bar_bottom {
+    transform: translateY(6px);
+  }
+  
+  .nav-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+  }
+  
+  .header-nav {
+    width: 100%;
+    height: 100%;
+    background-color: #1B1310;
+    z-index: 2;
+  }
+  
+  .header-nav .nav-list {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .header-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  
+  .burger-btn.close .bar_top{
+    transform: translateY(2px) rotate(45deg);
+    transition: transform .3s;
+  }
+  
+  .burger-btn.close .bar_mid {
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  
+  .burger-btn.close .bar_bottom {
+    transform: translateY(-2px) rotate(-45deg);
+    transition: transform .3s;
+  }
+  
+  body.noscroll {
+    overflow: hidden;
+  }
+
+  .show {
+    display: block;
+  }
+
+
+  /*---------------ファーストビュー----------*/
+  .fv {
+    height: 590px;
+    background-image: url(../img/fv-bgi_sp@2x.jpg);
+    background-size: cover;
+  }
+  
+  .fv h1 {
+    width: 300px;
+    font-size: 30px;
+    padding: 30px 0;
+  }
+  
+  /*---------------コンテナ----------*/
+  .box {
+    max-width: 345px;
+    margin: 0 auto;
+  }
+
+
+  /*---------------About----------*/
+  .section-title p {
+    font-size:36px ;
+  }
+  
+  .main-title p {
+    font-size: 20px;
+  }
+  
+  /*--------------Service---------*/
+  .service-contents {
+    flex-direction: column-reverse;
+  }
+  
+  .service-text {
+    margin-bottom: 40px;
+  }
+  
+  /*--------------News---------*/
+  .news-wrap {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    max-width: 321px;
+  }
+  
+  
+  .news-contents {
+    margin-bottom: 50px;
+  }
+
+
+  /*-------------お問い合わせ--------*/
+  .contact {
+    max-width:345px ;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .header-container {
+    max-width: 345px;
+  }
+}

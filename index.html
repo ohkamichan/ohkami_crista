@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>クリスタ初級</title>
+</head>
+
+<body>
+
+  <!--ヘッダー-->
+
+  <header>
+    <div class="header-container">
+      <a class="site-title" href='#'>クリ★スタ</a>
+      <div class="nav-wrapper">
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#service">Service</a></li>
+            <li class="nav-item"><a href="#news">News</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="burger-btn" id="gnav">
+        <span class="bars">
+          <span class="bar bar_top"></span>
+          <span class="bar bar_mid"></span>
+          <span class="bar bar_bottom"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!--ファーストビュー-->
+  <section class="fv">
+    <h1>Cresta Design.</h1>
+  </section>
+  
+  <!--コンテナ-->
+  <div class="container">
+    
+    
+    <!--About-->
+    <section class="box about">
+      <!--セクションタイトル-->
+      <div class="section-title">
+        <p id="about">About</p>
+      </div>
+      
+      <!--コンテンツ-->
+      <div class="main-title">
+        <p>ミニマルで<br>洗練されたデザインを。</p>
+      </div>
+      <div class="explain">
+        <p>近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+      </div>
+    </section>
+    
+    <!--Service-->
+    <section class="box service">
+      <!--セクションタイトル-->
+      <div class="section-title">
+        <p id="service">Service</p>
+      </div>
+      
+      <!--コンテンツ-->
+      <div class="service-contents first">
+        <div class="service-image">
+          <img src="./img/service-image@2x.jpg">
+        </div>
+        <div class="service-text">
+          <div class="main-title">
+            <p>リリース時のサポートで<br>サービスのブランディングを</p>
+          </div>
+          <div class="explain">
+            <p>弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-contents second">
+        <div class="service-image">
+          <img src="./img/service-image02@2x.jpg">
+        </div>
+        <div class="service-text">
+          <div class="main-title">
+            <p>リリース後のサポートで<br>効果を最大化させる</p>
+          </div>
+          <div class="explain">
+            <p>弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!--News-->
+    <section class="box news">
+      <!--セクションタイトル-->
+      <div class="section-title">
+        <p id="news">News</p>
+      </div>
+      
+      <!--コンテンツ-->
+      <div class="news-wrap">
+        
+        <a class="news-1" href="#">
+          <div class="news-contents">
+            <div class="news-image">
+              <img src="./img/card-image1@2x.jpg">
+            </div>
+            <div class="news-text">
+              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+            </div>
+          </div>
+        </a>
+        
+        <a class="news-2" href="#">
+          <div class="news-contents">
+            <div class="news-image">
+              <img src="./img/card-image2@2x.jpg">
+            </div>
+            <div class="news-text">
+              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+            </div>
+          </div>
+        </a>
+        
+        <a class="news-3" href="#">
+          <div class="news-contents">
+            <div class="news-image">
+              <img src="./img/card-image3@2x.jpg">
+            </div>
+            <div class="news-text">
+              <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </section>
+  </div>
+    
+    <!--------お問い合わせ------->
+    <section class="box contact">
+      <!--セクションタイトル-->
+      <div class="section-title">
+        <p id="contact">お問い合わせ</p>
+      </div>
+
+      <!--コンテンツ-->
+      <form action="#" method="POST">
+        
+        <label for="name">担当者名</label>
+        <input type="text" id="name">
+        
+        <label for="tel">電話番号</label>
+        <input type="text" id="tel">
+        
+        <label for="mail">メールアドレス</label>
+        <input type="text" id="mail">
+        
+        <label for="content">お問い合わせ内容</label>
+        <textarea id="content"></textarea>
+        
+        <button type="submit">送信</button>
+      </form>
+    </section>
+    
+    <!--フッター-->
+    <footer>
+      <p>©️crest.design all rights reserved</p>
+    </footer>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </script>
+   <script src="script.js"></script>
+</body>
+</html>
